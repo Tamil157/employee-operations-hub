@@ -1,0 +1,42 @@
+# Secrets and local environment configuration
+.env
+.env.*
+!.env.example
+backend/.env
+frontend/.env.local
+
+# Local planning notes
+IMPLEMENTATION_PLAN.md
+
+# Python
+backend/.venv/
+**/__pycache__/
+**/*.py[cod]
+**/.pytest_cache/
+**/.ruff_cache/
+**/.mypy_cache/
+**/coverage.xml
+**/.coverage
+
+# Local application data
+backend/data/
+*.db
+*.db-journal
+*.db-shm
+*.db-wal
+
+# Node and frontend builds
+backend/node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/dist-verify/
+frontend/*.tsbuildinfo
+.pnpm-store/
+
+# Logs, temporary files, and editor files
+*.log
+tmp/
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
